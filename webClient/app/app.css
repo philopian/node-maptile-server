@@ -10,3 +10,12 @@ body,html,#ui-row,#main-ui-view,.ui-view-container{
 	padding: 0px;
 	margin: 0px;
 }
+
+#logo{
+	width: 27px;
+display: inline;
+}
+
+#appTitle{
+	text-align: center;
+}
