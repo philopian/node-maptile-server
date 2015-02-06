@@ -6,10 +6,11 @@ var express = require('express');
 var app = express();
 //var clientPath = path.resolve(__dirname, '../webClient');
 var clientPath = path.resolve("..") + "/webClient/";
-var tilesDir = path.resolve(__dirname, '../tiles');
+var tilesDir = path.resolve("..") + '/tiles';
 
 
 app.use(express.static(clientPath));
+app.use(express.static(tilesDir));
 
 app.get("/:s/:z/:x/:y.*", function(req, res) {
 
