@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: WelcomeCtrl', function () {
+describe('Controller: MapViewCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('CustomTilesApp'));
+  beforeEach(module('customTilesApp'));
 
-  var WelcomeCtrl, 
+  var MapViewCtrl, 
       scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    WelcomeCtrl = $controller('WelcomeCtrl', {
+    MapViewCtrl = $controller('MapViewCtrl', {
       $scope: scope
     });
   }));

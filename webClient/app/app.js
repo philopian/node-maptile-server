@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('CustomTilesApp', [
+angular.module('customTilesApp', [
     'ngAnimate',
     'ngResource',
     'ngSanitize',

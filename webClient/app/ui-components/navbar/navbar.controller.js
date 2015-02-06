@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('CustomTilesApp')
+angular.module('customTilesApp')
     .controller('NavbarCtrl', function ($scope, $location) {
 
         // Menu list a bunch of items in the navbar here
         $scope.menu = [
-            {
-                'title': 'Welcome',
-                'link': '/#/'
-            }
+            // {
+            //     'title': 'Hello',
+            //     'link': '/#/'
+            // }
 
         ];
 
