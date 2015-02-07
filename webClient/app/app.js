@@ -11,4 +11,8 @@ angular.module('customTilesApp', [
         .otherwise('/');
 
     //$locationProvider.html5Mode(true);
+})
+.constant("BASE_URL",{
+	"url": "http://localhost",
+	"port": "5001"
 });

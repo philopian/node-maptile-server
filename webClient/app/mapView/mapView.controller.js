@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('customTilesApp')
-.controller('MapViewCtrl', function ($scope) {
+.controller('MapViewCtrl', function ($scope,BASE_URL) {
 
     /* create leaflet map */
     var map = L.map('map', {
@@ -10,6 +10,7 @@ angular.module('customTilesApp')
         minZoom: 0,
         maxZoom: 8
     });
-    new L.tileLayer('http://localhost:5000/road-trip/{z}/{x}/{y}.png', {}).addTo(map);
+    var maptileUrl = BASE_URL.url+':'+BASE_URL.port'/road-trip/{z}/{x}/{y}.png';
+    new L.tileLayer(maptileUrl, {}).addTo(map);
 
 });
