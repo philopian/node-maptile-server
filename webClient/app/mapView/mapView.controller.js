@@ -10,7 +10,7 @@ angular.module('customTilesApp')
         minZoom: 0,
         maxZoom: 8
     });
-    var maptileUrl = BASE_URL.url+':'+BASE_URL.port'/road-trip/{z}/{x}/{y}.png';
+    var maptileUrl = BASE_URL.url+':'+BASE_URL.port+'/road-trip/{z}/{x}/{y}.png';
+    console.log(maptileUrl);
     new L.tileLayer(maptileUrl, {}).addTo(map);
-
 });
