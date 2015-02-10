@@ -32,6 +32,13 @@ app.get("/:s/:z/:x/:y.*", function(req, res) {
 }); //app.get()
 
 
+// serve ng-html5 routes
+var webPath   = path.resolve("..") + "/webClient/";
+app.use(express.static(webPath));
+app.use('/*', function(req, res){
+  res.sendFile(webPath+'/index.html');
+});
+
 
 //--Make the app listen on a port-------------
 var port = process.env.PORT || 8080;
